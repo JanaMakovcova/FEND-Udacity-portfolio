@@ -55,11 +55,18 @@ img {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .picture_main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.about {
+  width: 80%;
+  padding: 1em;
+  margin: 1em;
+  order: 1;
 }
 .picture_big {
   padding: 1em;
@@ -125,6 +132,7 @@ footer a:hover, nav a:hover {
   .header_logo{
     align-self: flex-start;
   }
+
 }
 @media screen and (min-width: 762px) and (max-width: 1249px) {
   nav ul {
@@ -133,12 +141,17 @@ footer a:hover, nav a:hover {
   footer ul {
     justify-content: flex-start;
   }
+
 }
   @media screen and (min-width: 1250px) {
-  .nav, .header_portfolio, .content, .foot {
+  .nav, .header_portfolio, .content, #foot {
     width: 1250px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .about{
+    width: 30%;
+    order: -1;
   }
 
 }
