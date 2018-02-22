@@ -9,14 +9,18 @@ html {
 body {
   font-family: Bellefair, sans-serif;
   font-size: 12px;
+  margin:auto;
 }
+
 h1, h2 {
   margin: 0;
-}
-h1 {
   font-weight: 300;
-  font-size: 4em;
 }
+
+h1 {
+  font-size: 3em;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -28,6 +32,7 @@ img {
   margin-right: auto;
   background-color: lightblue;
 }
+
 .header_items {
   width: 100%;
   display: flex;
@@ -35,18 +40,15 @@ img {
   justify-content: space-between;
   align-items: flex-end;
 }
-.header_logo {
 
-}
 .header_text {
   text-align: right;
-  margin: 1em;
+  margin-right: 1em;
   align-self: flex-end;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 .content {
   display: flex;
@@ -58,9 +60,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
-
 .picture_big {
   padding: 1em;
   margin: 1em;
@@ -103,17 +103,20 @@ footer {
   padding: 1em;
   width: 100%;
 }
-footer ul {
+footer ul, nav ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
   -webkit-padding-start: 0px;
 }
 
-footer a {
+footer a, nav a {
   text-decoration: none;
   color: black;
   padding: 1.5em;
+}
+footer a:hover, nav a:hover {
+  color: lightblue;
 }
 @media screen and (max-width: 761px) {
   .header_items{
@@ -122,4 +125,20 @@ footer a {
   .header_logo{
     align-self: flex-start;
   }
+}
+@media screen and (min-width: 762px) and (max-width: 1249px) {
+  nav ul {
+    justify-content: flex-end;
+  }
+  footer ul {
+    justify-content: flex-start;
+  }
+}
+  @media screen and (min-width: 1250px) {
+  .nav, .header_portfolio, .content, .foot {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
