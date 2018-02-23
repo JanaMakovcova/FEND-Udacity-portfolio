@@ -9,13 +9,13 @@ h1, h2, h3 {
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 .header_portfolio {
   width: 100%;
   background-color: lightblue;
 }
-
 .header_logo {
   align-self: flex-start;
 }
@@ -130,6 +130,7 @@ nav a:hover {
   .header_logo{
     align-self: flex-start;
   }
+
 }
 @media screen and (min-width: 762px) and (max-width: 1249px) {
   nav ul {
@@ -143,10 +144,12 @@ nav a:hover {
   @media screen and (min-width: 1250px) {
   .nav, .header_portfolio, .content, #foot {
     width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
   .about{
     width: 30%;
     order: -1;
   }
+
 }
